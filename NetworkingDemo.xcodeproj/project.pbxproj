@@ -13,6 +13,7 @@
 		5598AA73228DAAAB0040DED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5598AA72228DAAAB0040DED2 /* Assets.xcassets */; };
 		5598AA76228DAAAB0040DED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5598AA74228DAAAB0040DED2 /* LaunchScreen.storyboard */; };
 		5598AA79228DAAAB0040DED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598AA78228DAAAB0040DED2 /* main.m */; };
+		5598AA81228DAB1D0040DED2 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5598AA80228DAB1D0040DED2 /* PostTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5598AA75228DAAAB0040DED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5598AA77228DAAAB0040DED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5598AA78228DAAAB0040DED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5598AA7F228DAB1D0040DED2 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		5598AA80228DAB1D0040DED2 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				5598AA74228DAAAB0040DED2 /* LaunchScreen.storyboard */,
 				5598AA77228DAAAB0040DED2 /* Info.plist */,
 				5598AA78228DAAAB0040DED2 /* main.m */,
+				5598AA7F228DAB1D0040DED2 /* PostTableViewCell.h */,
+				5598AA80228DAB1D0040DED2 /* PostTableViewCell.m */,
 			);
 			path = NetworkingDemo;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				5598AA6E228DAAA90040DED2 /* ViewController.m in Sources */,
 				5598AA79228DAAAB0040DED2 /* main.m in Sources */,
 				5598AA6B228DAAA90040DED2 /* AppDelegate.m in Sources */,
+				5598AA81228DAB1D0040DED2 /* PostTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
