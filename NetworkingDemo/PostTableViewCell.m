@@ -21,4 +21,11 @@
     // Configure the view for the selected state
 }
 
+- (void)setPost:(Post *)post {
+  _post = post;
+
+  self.titleLabel.text = post.title;
+  self.bodyLabel.text = post.body;
+}
+
 @end

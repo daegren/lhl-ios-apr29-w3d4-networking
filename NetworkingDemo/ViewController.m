@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "PostTableViewCell.h"
+#import "Post.h"
 
 @interface ViewController () <UITableViewDataSource>
 
@@ -46,7 +47,13 @@
       return;
     }
 
-    self.posts = json;
+    NSMutableArray *posts = [NSMutableArray array];
+    for (NSDictionary *postJSON in json) {
+      Post *post = [Post parseJSONDictionary:postJSON];
+      [posts addObject:post];
+    }
+
+    self.posts = posts;
 
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
       [self.tableView reloadData];
@@ -68,10 +75,9 @@
   PostTableViewCell *postCell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
 
   // TODO: configure the cell
-  NSDictionary<NSString *, id> *post = self.posts[indexPath.row];
+  Post *post = self.posts[indexPath.row];
 
-  postCell.titleLabel.text = post[@"title"];
-  postCell.bodyLabel.text = post[@"body"];
+  postCell.post = post;
 
   return postCell;
 }
